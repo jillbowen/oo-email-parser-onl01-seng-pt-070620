@@ -12,8 +12,8 @@ class EmailAddressParser
   end
   
   def parse
-    @emails.collect {|email| email}
-    binding.pry
+    @emails.split()
+      @emails.collect {|email| email}
   end
   
 end
