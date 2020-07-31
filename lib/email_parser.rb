@@ -13,6 +13,7 @@ class EmailAddressParser
   
   def parse
     @emails.collect {|email| email}
+    binding.pry
   end
   
 end
