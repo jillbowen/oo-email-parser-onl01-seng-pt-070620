@@ -13,7 +13,6 @@ class EmailAddressParser
   
   def parse
     @emails.match?(/,\s/) 
-    @emails.split()
   end
   
 end
