@@ -12,7 +12,7 @@ class EmailAddressParser
   end
   
   def parse
-    @emails.
+    @emails.collect {|email| email}
   end
   
 end
