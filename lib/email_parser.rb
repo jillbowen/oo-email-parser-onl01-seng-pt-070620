@@ -14,8 +14,10 @@ class EmailAddressParser
   def parse
     if @emails.include?(",")
       @emails.split(/,\s/)
-    else !@emails.include?(",")
+    elsif !@emails.include?(",")
       @emails.split
+    else @emails.include?(",") && !@emails.include?(",")
+      @emails.split(/,\s/)
     end
   end
   
