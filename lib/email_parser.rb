@@ -12,7 +12,8 @@ class EmailAddressParser
   end
   
   def parse
-    @emails.split
+    @emails.split.each {|email| email}
+    binding.pry
     
     # if @emails.include?(",")
     #   @emails.split(/,\s/)
