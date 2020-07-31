@@ -13,7 +13,7 @@ class EmailAddressParser
   
   def parse
     @emails.split.each do |email|
-      email.chomp(",")
+      email
       
     end
     # if @emails.include?(",")
