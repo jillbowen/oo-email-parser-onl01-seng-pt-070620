@@ -17,7 +17,7 @@ class EmailAddressParser
     elsif !@emails.include?(",")
       @emails.split
     else @emails.include?(",") && !@emails.include?(",")
-      @emails.split
+      @emails.split(/,\s/)
     end
   end
   
