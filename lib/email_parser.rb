@@ -12,15 +12,11 @@ class EmailAddressParser
   end
   
   def parse
-    @emails.split.each do |email|
-      email
-      
+    if @emails.include?(",")
+      @emails.split(/,\s/)
+    else !@emails.include?(",")
+      @emails.split
     end
-    # if @emails.include?(",")
-    #   @emails.split(/,\s/)
-    # else !@emails.include?(",")
-    #   @emails.split
-    # end
   end
   
 end
