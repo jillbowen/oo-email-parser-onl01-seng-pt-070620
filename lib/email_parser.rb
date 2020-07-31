@@ -12,9 +12,10 @@ class EmailAddressParser
   end
   
   def parse
-    @emails.split.each do |thing|
-    binding.pry
-  end
+    @emails.split.each do |email|
+      
+      
+    end
     # if @emails.include?(",")
     #   @emails.split(/,\s/)
     # else !@emails.include?(",")
